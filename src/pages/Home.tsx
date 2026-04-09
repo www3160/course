@@ -84,9 +84,15 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{course.name}</h3>
                   <p className="text-gray-600">{course.description}</p>
-                  <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-                    查看详情
-                  </button>
+                  {course.name === "数据分析技术" ? (
+                    <a href="/data-analysis" className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                      查看详情
+                    </a>
+                  ) : (
+                    <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                      查看详情
+                    </button>
+                  )}
                 </div>
               </div>
             ))}
