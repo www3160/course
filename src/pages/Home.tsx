@@ -88,6 +88,10 @@ export default function Home() {
                     <a href="/data-analysis" className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
                       查看详情
                     </a>
+                  ) : course.name === "数据采集与处理" ? (
+                    <a href="/data-collection" className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                      查看详情
+                    </a>
                   ) : (
                     <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
                       查看详情
