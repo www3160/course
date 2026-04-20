@@ -4,6 +4,7 @@ import DataAnalysisCourse from "@/pages/DataAnalysisCourse";
 import DataCollectionCourse from "@/pages/DataCollectionCourse";
 import PythonBasicCourse from "@/pages/PythonBasicCourse";
 import SupplyChainCourse from "@/pages/SupplyChainCourse";
+import DatabaseCourse from "@/pages/DatabaseCourse";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/data-collection" element={<DataCollectionCourse />} />
         <Route path="/python-basic" element={<PythonBasicCourse />} />
         <Route path="/supply-chain" element={<SupplyChainCourse />} />
+        <Route path="/database" element={<DatabaseCourse />} />
       </Routes>
     </Router>
   );

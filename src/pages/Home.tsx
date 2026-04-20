@@ -100,6 +100,10 @@ export default function Home() {
                     <a href="/supply-chain" className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
                       查看详情
                     </a>
+                  ) : course.name === "数据库原理与应用" ? (
+                    <a href="/database" className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                      查看详情
+                    </a>
                   ) : (
                     <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
                       查看详情
